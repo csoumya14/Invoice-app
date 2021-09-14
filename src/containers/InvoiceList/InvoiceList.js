@@ -33,7 +33,7 @@ const InvoiceList = ({ invoiceData, handleClick }) => {
           </ListTwoItemsDiv>
           <ListTwoItemsDiv>
             <DueDatePriceValue>
-              <DateP>Due{dateFormat(data.paymentDue)}</DateP>
+              <DateP>Due {dateFormat(data.paymentDue)}</DateP>
               <PriceDiv>
                 <span>&pound;</span> {priceValueFormat(data.total)}
               </PriceDiv>

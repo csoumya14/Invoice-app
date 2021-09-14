@@ -1,3 +1,7 @@
 export const priceValueFormat = number => {
-  return <div>{number.toLocaleString()}</div>;
+  return number.toLocaleString();
+};
+
+export const addZeroesInDecimal = num => {
+  return num.toLocaleString('en', { useGrouping: false, minimumFractionDigits: 2 });
 };

@@ -1,4 +1,7 @@
 import { Wrapper, AddressDiv, Id, Description, IdDescription, Address } from './MainDetails.css';
+import DateAddressEmailList from '../DateAddressEmailList/DateAddressEmailList';
+import DesignCostList from '../DesignCostList/DesignCostList';
+import TotalCost from '../TotalCost/TotalCost';
 const Details = ({ chosenInvoice }) => {
   console.log(chosenInvoice);
   return (
@@ -15,6 +18,9 @@ const Details = ({ chosenInvoice }) => {
           <p>{chosenInvoice.senderAddress.country}</p>
         </Address>
       </AddressDiv>
+      <DateAddressEmailList chosenInvoice={chosenInvoice} />
+      <DesignCostList chosenInvoice={chosenInvoice} />
+      <TotalCost chosenInvoice={chosenInvoice} />
     </Wrapper>
   );
 };

@@ -6,7 +6,7 @@ import { lightTheme, darkTheme } from './theme/ThemeVariable';
 import GlobalStyle from './theme/GlobalStyle';
 import Home from './pages/Home/Home';
 import Details from './pages/Details/Details';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   const [theme, toggleTheme] = useDarkMode();

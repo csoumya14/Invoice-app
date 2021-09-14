@@ -5,6 +5,8 @@ import arrowLeft from '../../assets/icon-arrow-left.svg';
 import GoBack from '../../components/Button/GoBackButton';
 import StatusInfo from '../../components/StatusInfo/StatusInfo';
 import MainDetails from '../../components/MainDetails/MainDetails';
+import EditDeletePaidButtons from '../../components/EditDeletePaidButtons/EditDeletePaidButtons';
+
 //import StatusInfo from '../../components/StatusInfo/StatusInfo';
 const DetailsSection = ({ chosenInvoice, setChosenInvoice }) => {
   const history = useHistory();
@@ -13,6 +15,7 @@ const DetailsSection = ({ chosenInvoice, setChosenInvoice }) => {
       <GoBack
         onClick={() => {
           history.push('/');
+          setChosenInvoice('');
         }}
       >
         <img type="image" tabIndex="0" src={arrowLeft} alt="arrow-left" />
@@ -20,6 +23,7 @@ const DetailsSection = ({ chosenInvoice, setChosenInvoice }) => {
       </GoBack>
       <StatusInfo chosenInvoice={chosenInvoice} />
       <MainDetails chosenInvoice={chosenInvoice} />
+      <EditDeletePaidButtons />
     </Wrapper>
   );
 };
