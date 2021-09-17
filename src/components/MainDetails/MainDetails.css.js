@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   padding: 2rem;
 `;
 export const AddressDiv = styled.div`
-  width: 106px;
+  width: 206px;
   height: 139px;
 `;
 export const Id = styled.p`
@@ -23,14 +23,16 @@ export const Description = styled.p`
   line-height: 1px;
   letter-spacing: -0.25px;
 `;
-export const IdDescription = styled.div``;
+export const IdDescription = styled.div`
+  width: 100%;
+`;
 
 export const Address = styled.address`
   font-weight: 500;
   height: 94px;
   margin-top: 2rem;
   font-size: 11px;
-  line-height: 10px;
+  line-height: 5px;
   font-style: normal;
   letter-spacing: -0.229167px;
   color: #7e88c3;

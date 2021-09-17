@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StatusDiv, DotDiv, StatusP } from '../InvoiceList/InvoiceList.css';
+
 export const Wrapper = styled.div`
   width: 90vw;
   display: flex;
@@ -8,46 +8,39 @@ export const Wrapper = styled.div`
   align-items: center;
   margin-top: 32px;
 `;
-export const StatusInfo = styled.div`
-  width: 327px;
-  height: 91px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 32px;
-`;
-export const Dot = styled(DotDiv)`
-  height: 8px;
-  width: 8px;
 
-  margin-right: 0.3rem;
-  background: ${props => props.theme[0]};
-  border-radius: 50%;
-`;
-export const StatusText = styled(StatusP)`
-  text-transform: capitalize;
-  font-size: 12px;
-  font-weight: bold;
-
-  color: ${props => props.theme[0]};
+export const DummyUl = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin-top: 75px;
 `;
 
-export const Status = styled(StatusDiv)`
-  width: 104px;
-  height: 40px;
+export const Dummyl = styled.li`
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  background-color: ${props => props.theme[1]};
-  justify-content: center;
+  text-transform: uppercase;
+  height: 70px;
+  line-height: 70px;
+  margin: 15px 0;
+  color: white;
+  cursor: pointer;
+  background-color: #00936e;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  transition: all 0.25s;
 `;
 
-export const TextStatus = styled.p`
-  font-size: 12px;
-  color: #858bb2;
-  font-weight: 500;
+export const Menu = styled.div`
+  width: 400px;
+  height: 100%;
+  top: 0;
+  left: -400px;
+  left: ${({ viewEditForm }) => (viewEditForm ? '0px' : '-400px')};
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 5px 5px 10px grey;
+  position: absolute;
+  z-index: 11;
+  opacity: ${({ viewEditForm }) => (viewEditForm ? '1' : '0')};
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 `;

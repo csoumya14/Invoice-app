@@ -6,6 +6,7 @@ export const ButtonElement = styled.button`
   align-self: flex-start;
   border: none;
   align-items: center;
+  background: transparent;
   width: 81px;
   height: 15px;
   font-size: 12px;

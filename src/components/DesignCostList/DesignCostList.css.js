@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 279px;
+  width: 259px;
   height: 148px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background: #f9fafe;
 `;
 export const ListContainer = styled.dl`
   display: flex;
