@@ -1,6 +1,7 @@
 import { Wrapper, Heading1 } from './EditForm.css';
 import arrowLeft from '../../assets/icon-arrow-left.svg';
 import GoBack from '../../components/Button/GoBackButton';
+import BillFrom from '../BillFromFieldForm/BillFrom';
 const EditForm = ({ viewEditForm, handleClick, chosenInvoice }) => {
   return (
     <Wrapper viewEditForm={viewEditForm}>
@@ -15,6 +16,9 @@ const EditForm = ({ viewEditForm, handleClick, chosenInvoice }) => {
           {chosenInvoice.id}
         </span>
       </Heading1>
+      <form>
+        <BillFrom chosenInvoice={chosenInvoice} />
+      </form>
     </Wrapper>
   );
 };

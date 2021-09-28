@@ -1,4 +1,4 @@
-import { Wrapper, DummyUl, Menu, Dummyl } from './DetailsInDepth.css';
+import { Wrapper } from './DetailsInDepth.css';
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import arrowLeft from '../../assets/icon-arrow-left.svg';
