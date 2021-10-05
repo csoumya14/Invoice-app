@@ -1,6 +1,5 @@
 import TopSection from '../../containers/TopSection/TopSection';
 import DetailsSection from '../../containers/DetailsInDepth/DetailsInDepth';
-
 import { Container } from './Details.css';
 
 const Details = ({ toggleTheme, chosenInvoice, setChosenInvoice }) => {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100vw;
-  height: 100%;
+
   top: 72px;
   left: -400px;
   left: ${({ viewEditForm }) => (viewEditForm ? '0px' : '-400px')};
@@ -28,3 +28,5 @@ export const Heading1 = styled.h1`
 
   color: #0c0e16;
 `;
+
+export const Form = styled.form``;
